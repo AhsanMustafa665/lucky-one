@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Musks from './Components/Musks/Musks';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Covid-19 & Extra Protection Musk</h1>
+      <h2>Select 4 Musks here.</h2>
+      <Musks></Musks>
     </div>
   );
 }

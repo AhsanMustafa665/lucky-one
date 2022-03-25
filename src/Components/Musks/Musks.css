@@ -1,9 +1,25 @@
 .musks-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    
 }
 .all-musk{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 45px;
+    width:50%;
+}
+.collection-cart{
+    margin-left: 20px;
+    background-color: whitesmoke;
+    height: 20%;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: 10px 5px 5px  rgb(139, 135, 135);
+    color: cornflowerblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: sticky;
+    top:0;
+    
+    
 }

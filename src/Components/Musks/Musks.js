@@ -3,19 +3,25 @@ import Musk from '../Musk/Musk';
 import './Musks.css';
 
 const Musks = () => {
+
     const [musks, setMusks] = useState([])
     useEffect(() => {
         fetch('fakeData.json')
             .then(res => res.json())
             .then(data => setMusks(data))
     }, []);
+    const handleAddToClick = (musk) => {
+        console.log(musk);
+    }
     return (
+
         <div className='musks-container'>
             <div className='all-musk'>
                 {
                     musks.map(musk => <Musk
                         musk={musk}
-                        key={musk.id}></Musk>)
+                        key={musk.id}
+                        handleAddToClick={handleAddToClick}></Musk>)
                 }
             </div>
             <div className='collection-cart'>

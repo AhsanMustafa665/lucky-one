@@ -18,7 +18,8 @@
     border-radius: 20px;
     margin-right: 10px;
     box-shadow: 10px 5px 5px  rgb(139, 135, 135);
-    
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: medium;
     position: sticky;
     top:0;
@@ -37,6 +38,17 @@
     padding-bottom: 8px;
     margin-top: 20px;
     border-radius: 10px;
+}
+.justOne img{
+    margin-top: 10px;
+    width: 100px;
+    border: 2px solid brown;
+}
+.justOne{
+    margin-top: 20px;
+    background-color:rgb(206, 205, 192);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 @media screen and (max-width:688px) {

@@ -1,14 +1,18 @@
 import React from 'react';
 import './Mask.css';
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { Accordion } from 'react-bootstrap';
+
+
 
 const Mask = (props) => {
     const { handleAddToClick } = props;
     const { name, img, price, service } = props.mask;
 
+
     return (
+
 
         <div className='product'>
             <img src={img} alt="" />
@@ -17,10 +21,15 @@ const Mask = (props) => {
                 <p>{service}</p>
                 <h4>Price : ${price}</h4>
 
+
             </div>
-            <button onClick={() => handleAddToClick(props.mask)} className='btn-cart'>ADD TO CART
+            <button onClick={() => handleAddToClick(props.mask)}
+                className='btn-cart'>ADD TO CART
                 <FontAwesomeIcon className='font' icon={faCartShopping}></FontAwesomeIcon> </button>
+
+
         </div>
+
 
 
     );

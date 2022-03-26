@@ -1,10 +1,10 @@
-.musks-container{
+.masks-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
     
     
 }
-.all-musk{
+.all-mask{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 45px;
@@ -40,7 +40,7 @@
 }
 
 @media screen and (max-width:688px) {
-    .all-musk{
+    .all-mask{
         grid-template-columns: repeat(1, 1fr);
     }
 }

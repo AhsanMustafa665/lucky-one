@@ -1,6 +1,6 @@
 # Lucky-one (Covid-19) mask special
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/Programming-Hero-Web-Course4/lucky-one-AhsanMustafa665).
 
 ## Available Scripts
 

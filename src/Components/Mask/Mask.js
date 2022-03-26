@@ -1,12 +1,12 @@
 import React from 'react';
-import './Musk.css';
+import './Mask.css';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
-const Musk = (props) => {
+const Mask = (props) => {
     const { handleAddToClick } = props;
-    const { name, img, price, service } = props.musk;
+    const { name, img, price, service } = props.mask;
 
     return (
 
@@ -18,7 +18,7 @@ const Musk = (props) => {
                 <h4>Price : ${price}</h4>
 
             </div>
-            <button onClick={() => handleAddToClick(props.musk)} className='btn-cart'>ADD TO CART
+            <button onClick={() => handleAddToClick(props.mask)} className='btn-cart'>ADD TO CART
                 <FontAwesomeIcon className='font' icon={faCartShopping}></FontAwesomeIcon> </button>
         </div>
 
@@ -26,4 +26,4 @@ const Musk = (props) => {
     );
 };
 
-export default Musk;
+export default Mask;

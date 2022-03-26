@@ -1,41 +1,43 @@
 import React, { useEffect, useState } from 'react';
-import Musk from '../Musk/Musk';
-import './Musks.css';
+import Mask from '../Mask/Mask';
+import './Masks.css';
 
-const Musks = () => {
+const Masks = () => {
 
-    const [musks, setMusks] = useState([])
+    const [masks, setMasks] = useState([])
     const [cart, setCart] = useState([])
     useEffect(() => {
         fetch('fakeData.json')
             .then(res => res.json())
-            .then(data => setMusks(data))
+            .then(data => setMasks(data))
     }, []);
-    const handleAddToClick = (musk) => {
-        const newCart = [...cart, musk]
+    const handleAddToClick = (mask) => {
+        const newCart = [...cart, mask]
         setCart(newCart)
 
     }
     return (
 
 
-        <div className='musks-container'>
-            <div className='all-musk'>
+        <div className='masks-container'>
+            <div className='all-mask'>
                 {
-                    musks.map(musk => <Musk
-                        musk={musk}
-                        key={musk.id}
+                    masks.map(mask => <Mask
+                        mask={mask}
+                        key={mask.id}
                         handleAddToClick={handleAddToClick
-                        }></Musk>)
+                        }></Mask>)
                 }
 
             </div>
             <div className='collection-cart'>
-                <h2 style={{ color: 'indigo', fontStyle: 'oblique' }} >Pick your musk now</h2>
+                <h2 style={{ color: 'indigo', fontStyle: 'oblique' }} >Pick your mask now</h2>
                 <div className='selection-container'>{
-                    cart.map((musk) => <div className='do-flex'> <img src={musk.img} alt="" />,<h3>{musk.name}</h3></div>)
+                    cart.map((mask) => <div className='do-flex'> <img src={mask.img} alt="" />,<h3>{mask.name}</h3></div>)
                 }</div>
+
                 <button style={{ padding: '10px', marginTop: '20px', color: 'white', backgroundColor: 'green', fontSize: '15px', borderRadius: '10px', cursor: 'pointer' }}>CHOOSE 1 FOR ME</button>
+
                 <button style={{ padding: '10px', marginTop: '20px', color: 'white', backgroundColor: 'green', fontSize: '15px', borderRadius: '10px', cursor: 'pointer' }}>CHOOSE AGAIN</button>
 
             </div>
@@ -45,4 +47,4 @@ const Musks = () => {
     );
 };
 
-export default Musks;
+export default Masks;

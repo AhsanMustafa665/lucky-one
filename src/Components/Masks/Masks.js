@@ -17,7 +17,7 @@ const Masks = () => {
         const newCart = [...cart, mask]
         setCart(newCart)
         if (cart.length > 4) {
-            alert('fsajdfjsd')
+            alert("'Sorry you can't collect more than four masks :(")
         }
 
     }
@@ -46,12 +46,9 @@ const Masks = () => {
                     cart.slice(0, 4).map((mask) => <div className='do-flex' > <img src={mask.img} alt="" /> <h3>{mask.name}</h3></div>)
                 }
                 </div>
-
                 <button onClick={chooseProduct} style={{ padding: '10px', marginTop: '20px', color: 'white', backgroundColor: 'green', fontSize: '15px', borderRadius: '10px', cursor: 'pointer' }}>CHOOSE 1 FOR ME</button>
 
-
                 <button onClick={() => setSelected("")} style={{ padding: '10px', marginTop: '20px', color: 'white', backgroundColor: 'green', fontSize: '15px', borderRadius: '10px', cursor: 'pointer' }}>CHOOSE AGAIN</button>
-
                 {
                     selected &&
                     <div className='justOne'>
@@ -65,8 +62,6 @@ const Masks = () => {
                 }
 
             </div>
-
-
         </div >
 
 

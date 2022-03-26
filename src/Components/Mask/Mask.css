@@ -3,9 +3,8 @@
     height: 240px;
     border-radius: 10px;
     margin-top: 8px;
-    
-    
 }
+
 .product{
     width: 300px;
     height: 100%;
@@ -14,15 +13,16 @@
     border-radius: 10px;
     padding: 7px;
     background-color: rgb(216, 199, 176);
-    
-    
 }
+
 .product-info{
     margin: 10px;
 }
+
 .product-info h2{
     color:brown;
 }
+
 .btn-cart{
     width: 100%;
     font-size: large;
@@ -32,12 +32,12 @@
     border: none;
     border-radius: 10px;
     color:rgb(49, 97, 136) ;
-    
-    
 }
+
 .font{
     margin-left: 10px;
 }
+
 .btn-cart:hover{
     background-color: rgb(49, 97, 136);
     font-weight: 700;

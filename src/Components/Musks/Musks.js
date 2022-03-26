@@ -5,15 +5,19 @@ import './Musks.css';
 const Musks = () => {
 
     const [musks, setMusks] = useState([])
+    const [cart, setCart] = useState([])
     useEffect(() => {
         fetch('fakeData.json')
             .then(res => res.json())
             .then(data => setMusks(data))
     }, []);
     const handleAddToClick = (musk) => {
-        console.log(musk);
+        const newCart = [...cart, musk]
+        setCart(newCart)
+
     }
     return (
+
 
         <div className='musks-container'>
             <div className='all-musk'>
@@ -21,11 +25,17 @@ const Musks = () => {
                     musks.map(musk => <Musk
                         musk={musk}
                         key={musk.id}
-                        handleAddToClick={handleAddToClick}></Musk>)
+                        handleAddToClick={handleAddToClick
+                        }></Musk>)
                 }
+
             </div>
             <div className='collection-cart'>
-                <h1>Pick your favourite now</h1>
+                <h2 style={{ color: 'indigo', fontStyle: 'oblique' }} >Pick your musk now</h2>
+                <div className='selection-container'>{
+                    cart.map((musk) => <div className='do-flex'> <img src={musk.img} alt="" />,<h3>{musk.name}</h3></div>)
+                }</div>
+
             </div>
 
         </div>

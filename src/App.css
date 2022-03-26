@@ -1,7 +1,12 @@
 .App {
   text-align: center;
-  background-color:aliceblue;
+  background-color:rgb(221, 208, 211);
+  padding-top: 20px;
+  padding-bottom: 10px;
   
+}
+.mask-style{
+  color:cadetblue;
 }
 
 .App-logo {

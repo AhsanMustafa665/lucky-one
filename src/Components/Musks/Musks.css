@@ -2,26 +2,41 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     
+    
 }
 .all-musk{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 45px;
-    width:50%;
     margin: 10px;
 }
 .collection-cart{
     margin-left: 20px;
     background-color: whitesmoke;
-    height: 20%;
+    height: 50%;
     font-family: 'Tangerine', cursive;;
     border-radius: 20px;
     margin-right: 10px;
     box-shadow: 10px 5px 5px  rgb(139, 135, 135);
-    color: cornflowerblue;
+    
     font-size: medium;
     position: sticky;
     top:0;
+    
+}
+.selection-container img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.do-flex {
+    display: flex;
+    background-color:lightgrey;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:688px) {

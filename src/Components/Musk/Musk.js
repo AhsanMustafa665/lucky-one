@@ -7,6 +7,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 const Musk = (props) => {
     const { handleAddToClick } = props;
     const { name, img, price, service } = props.musk;
+
     return (
 
         <div className='product'>
@@ -15,6 +16,7 @@ const Musk = (props) => {
                 <h2>{name}</h2>
                 <p>{service}</p>
                 <h4>Price : ${price}</h4>
+
             </div>
             <button onClick={() => handleAddToClick(props.musk)} className='btn-cart'>ADD TO CART
                 <FontAwesomeIcon className='font' icon={faCartShopping}></FontAwesomeIcon> </button>

@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Lucky-one (Covid-19) mask special
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

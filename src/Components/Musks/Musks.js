@@ -35,10 +35,12 @@ const Musks = () => {
                 <div className='selection-container'>{
                     cart.map((musk) => <div className='do-flex'> <img src={musk.img} alt="" />,<h3>{musk.name}</h3></div>)
                 }</div>
+                <button style={{ padding: '10px', marginTop: '20px', color: 'white', backgroundColor: 'green', fontSize: '15px', borderRadius: '10px', cursor: 'pointer' }}>CHOOSE 1 FOR ME</button>
+                <button style={{ padding: '10px', marginTop: '20px', color: 'white', backgroundColor: 'green', fontSize: '15px', borderRadius: '10px', cursor: 'pointer' }}>CHOOSE AGAIN</button>
 
             </div>
 
-        </div>
+        </div >
 
     );
 };
